@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@if (@User.Identity.IsAuthenticated)
+{
+    
+}
+
+<div class="container-login">
+    <div class="row">
+        <h3 class="titulo">Efetuar Login no Sistema</h3>
+    </div>
+    <div class="row">
+        <section id="loginForm">
+           <a href="@Url.Action("LoginPage", "Usuarios")" >  
+               <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-success" value="Entrar" 
+                    </div>
+                </div> 
+     </div></a>
+        </section>
+    </div>
+</div>
